@@ -2,6 +2,4 @@
 
 Web application for My Gainz CEN4021 Project
 
-This is Ians feature branch.
-
 ---
