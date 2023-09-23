@@ -1,6 +1,4 @@
-# My Gainz official github website
-
-Web application for My Gainz CEN4021 Project
+# Welcome to myGainz Github!
 
 This is Ians feature branch, welcome!
 
