@@ -22,10 +22,10 @@ Looks like this inside the repo folder:
 |--server--config            <- Put firebase config here
 |
 |--client--src-----config    <- Put firebase config here
-|			|
-|			------components <- Put webpages here
-|			|
-|			-------assets    <- Put media (photos, logos, videos, etc.)
+|		|
+|		------components <- Put webpages here
+|		|
+|		-------assets    <- Put media (photos, logos, videos, etc.)
 
 
 Inside ~/client/src directory, we are putting these files:
