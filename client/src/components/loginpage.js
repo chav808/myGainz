@@ -14,10 +14,20 @@ import logo from "../assets/mygainz_logo.png";
 
 const LoginPage = () => {
 
-
+	const logoStyle = {
+		height: "500px",
+		width: "auto",
+		marginBottom: "-8rem",
+		marginTop: "-10rem"
+		
+	};
+	
 	return (
 		<div>
 			Hello World!
+			<img src={logo} alt="logo" style={logoStyle} />
+			
+			
 		</div>
 	);
 };
