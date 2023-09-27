@@ -10,15 +10,15 @@ import {
 import { Container, Typography, TextField, Button, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/mygainz-logo.png";
-
-
+import logo from "../assets/mygainz_logo.png";
 
 const LoginPage = () => {
 
 
 	return (
- 
+		<div>
+			Hello World!
+		</div>
 	);
 };
 
