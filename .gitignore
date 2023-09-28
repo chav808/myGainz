@@ -32,6 +32,7 @@
 *.sqlite
 *.bak
 .env
+env.js
 credentials.json
 
 # OS generated files #
