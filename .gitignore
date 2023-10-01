@@ -1,5 +1,6 @@
 # ignore everything brought in via npm #
 ########################################
+
 /server/node_modules/*
 /client/node_modules/*
 
