@@ -1,3 +1,6 @@
+# ignore everything brought in via npm #
+########################################
+
 /server/node_modules/*
 /client/node_modules/*
 
@@ -29,6 +32,9 @@
 *.sql
 *.sqlite
 *.bak
+.env
+env.js
+credentials.json
 
 # OS generated files #
 ######################

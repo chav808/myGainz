@@ -1,17 +1,30 @@
-# My Gainz official github website
+# Welcome to myGainz Github!
 
-Web application for My Gainz CEN4021 Project
+This is the shared repo for the myGainz Fitness web application.
 
-This is Ians feature branch, welcome!
+## What is myGainz?
 
-Here we should be creating a few different things:
+myGainz is a senior level Software Engineering project implementing a modern web-based application via a FERN stack. It is centered around the importance of fitness, health, exercise and diet.
+FERN is an acronym for **F**irebase, **E**xpress, **R**eact, **N**ode, the set of technologies required to use this application.
 
-	- A login page
-	- A Firebase connection for authentication
-	- Routing from Login to the various pages
-	- The styling, whatever that ends up being
-	
-Contact me for questions!
+## The File Structure
+
+Looks like this inside the repo folder:
+
+```bash
+
+myGainz			<- Parent directory
+|
+|---server--config            <- Put firebase config here
+|
+|---client--src-----config    <- Put firebase config here
+|		|
+|		------components <- Put webpages here
+|		|
+|		-------assets    <- Put media (photos, logos, videos, etc.)
+
+
+```
 	
 
 ---
