@@ -1,0 +1,58 @@
+{
+  "name": "mygainz client",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/lab": "^5.0.0-alpha.135",
+    "@mui/material": "^5.14.0",
+    "@mui/system": "^5.13.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "16.3.1",
+    "downshift": "^7.6.0",
+    "firebase": "^9.23.0",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-date-picker": "^10.2.0",
+    "react-datepicker": "^4.15.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.45.1",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^2.2.19",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
