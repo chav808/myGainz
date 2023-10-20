@@ -126,13 +126,13 @@ const LoginPage = () => {
       <Typography variant="body2" align="center" sx={{ mt: 2 }}>
         Don't have an account?{" "}
         <Link component={RouterLink} to="/register" underline="hover">
-          Register
+          Register here.
         </Link>
       </Typography>
       <Typography variant="body2" align="center" sx={{ mt: 2 }}>
         Forgot password?{" "}
-        <Link component={RouterLink} to="/resetPassword" underline="hover">
-          Reset Password
+        <Link component={RouterLink} to="/resetpassword" underline="hover">
+          Reset it.
         </Link>
       </Typography>
     </Container>
