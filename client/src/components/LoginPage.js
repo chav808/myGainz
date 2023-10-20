@@ -47,27 +47,27 @@ const LoginPage = () => {
     }
   };
 
-  const handleResetPassword = async (email) => {
-    const auth = getAuth();
+	const handleResetPassword = async (email) => {
+		const auth = getAuth();
 
-    try {
-      await sendPasswordResetEmail(auth, email);
-      console.log("Password reset email sent to:", email);
-    } catch (error) {
-      console.error("Error sending password reset email:", error);
-    }
-  };
+		try {
+			await sendPasswordResetEmail(auth, email);
+			console.log("Password reset email sent to:", email);
+		} catch (error) {
+			console.error("Error sending password reset email:", error);
+		}
+	};
 
-  const handleResetClick = () => {
-    handleResetPassword(email);
-  };
+	const handleResetClick = () => {
+		handleResetPassword(email);
+	};
 
-  const logoContainerStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: "2rem",
-  };
+	const logoContainerStyle = {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		marginBottom: "2rem",
+	};
 
 	const logoStyle = {
 		height: "350px",
@@ -126,13 +126,13 @@ const LoginPage = () => {
       <Typography variant="body2" align="center" sx={{ mt: 2 }}>
         Don't have an account?{" "}
         <Link component={RouterLink} to="/register" underline="hover">
-          Register
+          Register here.
         </Link>
       </Typography>
       <Typography variant="body2" align="center" sx={{ mt: 2 }}>
         Forgot password?{" "}
-        <Link component={RouterLink} to="/resetPassword" underline="hover">
-          Reset Password
+        <Link component={RouterLink} to="/resetpassword" underline="hover">
+          Reset it.
         </Link>
       </Typography>
     </Container>
