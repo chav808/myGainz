@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { TextField, Button, Box, Typography, Link } from '@mui/material';
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { auth } from '../config/firebase';
+import { useNavigate } from 'react-router-dom';
 import { Link as RouterLink } from "react-router-dom";
 import logo from "../assets/mygainz_logo.png";
 
 const ResetPassword = () => {
 	const [email, setEmail] = useState('');
 	const [isEmailSent, setIsEmailSent] = useState(false);
+	const navigate = useNavigate();
 	
 	const handleResetPassword = async () => {
 		try {
@@ -65,6 +67,9 @@ const ResetPassword = () => {
 			/>
 			<Button variant="contained" onClick={handleResetPassword} fullWidth>
 			  Reset Password
+			</Button>
+			<Button variant="contained" onClick={() => navigate('/login')} fullWidth style={{ marginTop: '2rem' }}>
+			  Return to Login
 			</Button>
 		  </Box>
 		</Box>
