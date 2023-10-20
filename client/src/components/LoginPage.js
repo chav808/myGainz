@@ -54,7 +54,7 @@ const LoginPage = () => {
       await sendPasswordResetEmail(auth, email);
       console.log("Password reset email sent to:", email);
     } catch (error) {
-      console.error("Error sendint password reset email:", error);
+      console.error("Error sending password reset email:", error);
     }
   };
 
@@ -72,7 +72,7 @@ const LoginPage = () => {
 	const logoStyle = {
 		height: "350px",
 		width: "auto",
-		marginBottom: "-8rem",
+		marginBottom: "-2.5rem",
 		marginTop: "-2rem"
 		
 	};
