@@ -26,6 +26,20 @@ const RegisterPage = () => {
 		
 		const auth = getAuth();
 		
+		try {
+			const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+			console.log("User registered:", userCredential.user);
+			const currentUser = auth.currentUser;
+			const userData = {
+				email: currentUser.email,
+				firstName,
+				lastName
+			}
+			navigate("/home")
+			await setDoc(doc(db, 'Users', userCredential.user.uid), userData);
+		} catch (error) {
+			console.error("Something went wrong while registering! Error code:", error);
+		}
 	};
 	
 	const handleGoogleSignIn = async () => {
