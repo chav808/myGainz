@@ -18,10 +18,10 @@ myGainz			<- Parent directory
 |---server--config            <- Put firebase config here
 |
 |---client--src-----config    <- Put firebase config here
-|	  |
-|	  ------components <- Put webpages here
-|	  |
-|	  -------assets    <- Put media (photos, logos, videos, etc.)
+|	      |
+|	      ------components <- Put webpages here
+|	      |
+|	      -------assets    <- Put media (photos, logos, videos, etc.)
 
 
 ```
