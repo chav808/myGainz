@@ -13,22 +13,22 @@ Looks like this inside the repo folder:
 
 ```bash
 
-myGainz				<- Parent directory
+myGainz			<- Parent directory
 |
 |---server--config            <- Put firebase config here
 |
 |---client--src-----config    <- Put firebase config here
-|		|
-|		------components <- Put webpages here
-|		|
-|		-------assets    <- Put media (photos, logos, videos, etc.)
+|	  |
+|	  ------components <- Put webpages here
+|	  |
+|	  -------assets    <- Put media (photos, logos, videos, etc.)
 
 
 ```
 	
 ## How Do I Start myGainz?
 
-1. Ensure Node.js is installed on your computer. [Link to Node webiste.](https://nodejs.dev/en/download/)
+1. Ensure Node.js is installed on your computer. [Link to Node website.](https://nodejs.dev/en/download/)
 To check if its installed on your machine already, open a Terminal or Command Prompt:
 
 ```
@@ -37,7 +37,7 @@ node --version
 
 2. Clone the myGainz repo (main branch) to your local machine. Put it somewhere memorable.
 
-3. Once cloned, in the parent directory (C:\...\...\mygainz), open a Terminal or Command Prompt:
+3. Once cloned, in the parent directory (C:\\...\\...\mygainz), open a Terminal or Command Prompt:
 
 ```
 # Go to the /server subdirectory (replace the ... with whatever your filepath is)
