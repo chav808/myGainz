@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.dashboard {
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+body {
+    background-color: aliceblue;
+}
+.dashboard .workout_list .weekday h3{
+    font-size: 20px;
+    line-height: 0;
+}
+.dashboard .workout_list .weekday li{
+    list-style: none;
+    position: relative;
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.dashboard .workout_list .weekday {
+    background-color: white;
+    padding: 20px 20px 20px 60px;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 30%;
+}
+
+.dashboard .workout_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
