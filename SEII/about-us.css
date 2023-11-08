@@ -1,0 +1,54 @@
+body{
+        display: grid;
+        justify-content: center;
+        background-color: beige;
+        margin-top: 5%;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 100% 100%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+
+}
+
+.U01{
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+    border: 2px white;
+}
+
+.U1{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.tab-header{
+    cursor: pointer;
+}
+
+/* .tab-content{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: large;
+} */
+
+.bio{
+    font-size: medium;
+}
+
+.container{
+    text-align: center;
+}
+
+.link{
+    width: 25px;
+}
+
+h5{
+    width: 240px;
+}
