@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js"></script>
+</head>
+<body> <!--start body-->
+    <a href="dashboard.html">
+        <button>Back</button>
+    </a>
+    <h1>Generate Your Weekly Workout Plan</h1>
+    <p>Answer the questions below to receive your personalized workout plan</p>
+    <ul id="getWorkout"> <!--start form-->
+        <h3>What are your fitness goals?</h3>
+        <ul>
+        <label>
+            <input type="radio" name="question1" id="Strength" value="strength"/>
+            <span>Strength</span>
+        </label>
+        </ul>
+        <ul>
+        <label>
+            <input type="radio" name="question1" id="Hypertrophy" value="hypertrophy"/>
+            <span>Hypertrophy</span>
+        </label>
+        </ul>
+        <ul>
+        <label>
+            <input type="radio" name="question1" id="weightLoss" value="weightLoss"/>
+            <span>Weight Loss</span>
+        </label>
+        </ul>
+
+        <h3>How many days per week do you want to work out?</h3>
+        <ul>
+            <label>
+                <input type="radio" name="question2" id="two" value="2"/>
+                <span>2</span>
+            </label>
+            </ul>
+            <ul>
+            <label>
+                <input type="radio" name="question2" id="three" value="3"/>
+                <span>3</span>
+            </label>
+            </ul>
+            <ul>
+            <label>
+                <input type="radio" name="question2" id="four" value="4"/>
+                <span>4</span>
+            </label>
+            </ul>
+            <ul>
+                <label>
+                    <input type="radio" name="question2" id="five" value="5"/>
+                    <span>5</span>
+                </label>
+            </ul>
+            <a href="dashboard.html">
+                <button class="viewWorkout">View my workout plan</button>
+            </a>
+
+        
+        </ul> <!--end form-->
+
+</body> <!--end body-->
