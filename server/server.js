@@ -3,7 +3,6 @@ const port = 5000;
 const cors = require('cors');
 const path = require('path');
 const { db, auth, admin } = require('./config/firebase');
- 
 
 const app = express();
 app.use(cors());
@@ -56,16 +55,3 @@ app.post('/api/auth/login', (req, res) => {
   app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-
-/*
-const http = require('http');
-
-
-var server = http.createServer(function (request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World. Gabe is a bitch\n");
-});
-server.listen(4000);
-
-*/
