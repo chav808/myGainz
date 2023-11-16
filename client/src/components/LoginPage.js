@@ -4,6 +4,8 @@ import { Container, Typography, TextField, Button, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/mygainz_logo.png";
+import "../loginPage.css";
+
 
 const LoginPage = () => {
 	const auth = getAuth();
@@ -77,27 +79,24 @@ const LoginPage = () => {
 			  fullWidth
 			  margin="normal"
 			/>
-			<Button variant="contained" type="submit" fullWidth>
-			  Login
-			</Button>
-			
-			{errorMessage && (
-			  <Typography
-				variant="body2"
-				color="error"
-				align="center"
-				sx={{ mt: 2 }}
-			  >
-				{errorMessage}
-			  </Typography>
-			)}
-		</form>
-			<Button
-				variant="contained"
-				onClick={handleGoogleSignIn}
-				fullWidth
-				style={{ marginTop: "2rem" }}
-			>
+			  <Button className="button bg-gradient-yellow" variant="contained" type="submit" fullWidth>
+          Login
+        </Button>
+
+        {errorMessage && (
+          <Typography variant="body2" color="error" align="center" sx={{ mt: 2 }}>
+            {errorMessage}
+          </Typography>
+        )}
+      </form>
+
+      <Button
+        className="button bg-gradient-yellow"
+        variant="contained"
+        onClick={handleGoogleSignIn}
+        fullWidth
+        style={{ marginTop: "2rem" }}
+      >
 				Login with Google
 			</Button>
 			<Typography variant="body2" align="center" sx={{ mt: 2 }}>

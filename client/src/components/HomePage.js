@@ -1,47 +1,85 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Typography,
-  TextField,
   Button,
   Container,
-  Tab,
-  Tabs,
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
-  InputAdornment,
+  Box,
   IconButton,
-  Box
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  AppBar,
+  Toolbar,
 } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
-import { useNavigate } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../config/firebase";
-import { uploadBytes, getDownloadURL, ref } from "firebase/storage";
-import { storage } from "../config/firebase";
-import { minHeight } from "@mui/system";
+import MenuIcon from "@mui/icons-material/Menu";
 import Header from "./Header";
-import '../scss/HomePage.scss';
+import "../scss/HomePage.scss";
 
 const HomePage = () => {
-	
-	return (
-	<>
-		<Header />
-			<body>
-		<h1>MyGainz Dashboard</h1>
-		<p>View your weekly workout plan, make adjustments and browse our list of exercises</p>
-		<div class="dashboard"> 
-			
-			<h2>My Weekly Workouts</h2>
-			<a href="generateWorkout.html">
-			<button type="workoutGenerator">Generate New Workout</button>
-			</a>
-			<a href="workoutList.html">
-				<button type="workoutList">View all Exercises</button>
-			</a>
-			<div class="workout_list">
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpenDrawer(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpenDrawer(false);
+  };
+
+  return (
+    <>
+      <Header />
+      <Box>
+        {/* Responsive Navbar */}
+		<AppBar position="static" style={{ background: 'linear-gradient(90deg, #ffd700 0%, #ffac00 33%, #e07c00 68%)' }}>
+  <Toolbar>
+    <IconButton
+      edge="start"
+      color="inherit"
+      aria-label="menu"
+      onClick={handleDrawerOpen}
+    >
+      <MenuIcon />
+    </IconButton>
+    <Typography variant="h6">
+     
+    </Typography>
+  </Toolbar>
+</AppBar>
+
+
+        {/* Drawer */}
+        <Drawer anchor="left" open={openDrawer} onClose={handleDrawerClose}>
+          <List>
+            <ListItem button onClick={handleDrawerClose}>
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem button onClick={handleDrawerClose}>
+              <ListItemText primary="About" />
+            </ListItem>
+            <ListItem button onClick={handleDrawerClose}>
+              <ListItemText primary="Contact" />
+            </ListItem>
+          </List>
+        </Drawer>
+
+        {/* Main Content */}
+        <Container>
+          <h1>MyGainz Dashboard</h1>
+          <p>
+            View your weekly workout plan, make adjustments and browse our list
+            of exercises
+          </p>
+          <div class="dashboard">
+            <h2>My Weekly Workouts</h2>
+            <a href="generateWorkout.html">
+              <button type="workoutGenerator">Generate New Workout</button>
+            </a>
+            <a href="workoutList.html">
+              <button type="workoutList">View all Exercises</button>
+            </a>
+           <div class="workout_list">
 				<div class="weekday">
 					<h3>Monday</h3>
 					<p>Exercises for today:</p>
@@ -85,10 +123,10 @@ const HomePage = () => {
 				</div>
 			</div>
 		</div>
-	
-	</body>
-	</>
-	);
+        </Container>
+      </Box>
+    </>
+  );
 };
 
 export default HomePage;

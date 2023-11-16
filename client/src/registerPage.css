@@ -1,0 +1,31 @@
+/* Add these styles to your registerPage.css file */
+
+/* Yellow to light yellow gradient with black text */
+.bg-gradient-yellow {
+    background: linear-gradient(90deg, #ffeb3b 0%, #ffd700 33%, #ffc107 68%);
+    color: black;
+  }
+  
+  /* Apply the 'system-ui' font to the body */
+  body {
+    font-family: system-ui;
+  }
+  
+  /* Apply the 'system-ui' font to the buttons */
+  .button {
+    font-family: system-ui;
+    background: black; /* Default background color for other buttons */
+    padding: 0.8rem; /* Adjusted button padding */
+    border-radius: 50px;
+    border-color: transparent;
+    font-size: 1.2rem; /* Adjusted button font size */
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .button.bg-gradient-yellow {
+    background: linear-gradient(90deg, #ffeb3b 0%, #ffd700 33%, #ffc107 68%);
+    color: black;
+  }
+  

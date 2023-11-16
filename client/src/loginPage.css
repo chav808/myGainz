@@ -1,0 +1,31 @@
+/* Add these styles to your loginPage.css file */
+
+/* Yellow to light yellow gradient with black text */
+.bg-gradient-yellow {
+    background: linear-gradient(90deg, #ffeb3b 0%, #ffd700 33%, #ffc107 68%);
+    color: black;
+  }
+  
+  /* Apply the 'System UI' font to the body */
+  body {
+    font-family: 'System UI', sans-serif;
+  }
+  
+  /* Apply the 'System UI' font to the buttons */
+  .button {
+    font-family: 'System UI', sans-serif;
+    background: black; /* Default background color for other buttons */
+    padding: 1rem;
+    border-radius: 50px;
+    border-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .button.bg-gradient-yellow {
+    background: linear-gradient(90deg, #ffeb3b 0%, #ffd700 33%, #ffc107 68%);
+    color: black;
+  }
+  

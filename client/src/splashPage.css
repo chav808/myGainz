@@ -1,0 +1,148 @@
+* {
+  font-family: system-ui;
+  overflow-x: hidden;
+}
+
+.bg-gradient {
+  background: rgb(255, 255, 85);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 85, 1) 0%,
+    rgba(255, 204, 0, 1) 33%,
+    rgba(255, 165, 0, 1) 68%,
+    rgba(255, 102, 0, 1) 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 29%, 0 100%);
+
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  inset: 0;
+  z-index: -100;
+}
+
+
+.body {
+ width: 100%;
+ height: 100%;
+ padding: 5.5rem 8rem;
+ display:flex;
+ overflow: hidden;
+ gap: 16rem;
+}
+
+.hero-title {
+  margin-left: 4rem;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-text {
+  font-size: 5rem;
+  margin-bottom: 0;  
+}
+
+.hero-description {
+  font-size: 2rem;
+}
+
+.hero-side {
+  margin-top: 6rem;
+  width: 550px;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 100px 0px 100px 0px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 500px;
+  background-image: url('https://thebarbell.com/wp-content/uploads/2023/06/Shannon-Sharpe-workout-1068x947.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100px 0px 0px 0px;
+}
+
+.user-quote {
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.user-signature {
+  text-align: right;
+  margin-right: 5rem;
+  padding:2rem 0rem;
+  font-size: 2rem;
+}
+
+.hero-interact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up {
+  background: black;
+  padding: 1rem;
+  border-radius: 50px;
+  border-color: transparent;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.sign-up:hover {
+  opacity: 0.5;
+}
+
+.sign-up:hover .button-svg {
+  rotate: 90deg;
+}
+
+.about-link {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  
+}
+
+.button-svg {
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  display: inline;
+  vertical-align: bottom;
+  transition: all .1s ease-in;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover .link-svg {
+  animation-play-state: running; 
+}
+
+@keyframes bounce {
+  0% 100% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+}
+
+
+.link-svg {
+  height: 30px;
+  width: 30px;
+  vertical-align: bottom;
+  margin-bottom: 0px;
+  animation: bounce 1.2s linear infinite;
+  animation-play-state: paused;
+}
