@@ -1,0 +1,78 @@
+body{
+    display: grid;
+    justify-content: center;
+    background-color: beige;
+    margin-top: 5%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img{
+    display: inline;
+    margin: 0 auto;
+    width: auto;
+    margin-left: 25%;
+    
+}
+
+img.rounded{
+      border-radius: 50%;
+      height: 300px;
+      object-fit: cover;
+      width: 300px;
+      border: 2px white;
+      margin-top: 5%;
+}
+
+.username{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 35%;
+    margin-top: -110px;
+}
+
+.userinformation{
+    font-family: sans-serif;
+    font-size: 11px;
+    margin-left: 37%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.usergoal{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-top: 8%
+}
+
+button{
+    cursor: pointer;
+    margin-left: 80%;
+   
+}
+
+.boxed{
+    height: 600px;
+    width: 600px;
+    margin-left: 15px;
+    border-radius: 10px ;
+    background-color: whitesmoke;
+}  
