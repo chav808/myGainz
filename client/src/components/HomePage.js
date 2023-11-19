@@ -15,6 +15,9 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import Header from "./Header";
 import "../scss/HomePage.scss";
+import AboutUs from "./AboutUs";
+import { Link as RouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -55,8 +58,11 @@ const HomePage = () => {
             <ListItem button onClick={handleDrawerClose}>
               <ListItemText primary="Home" />
             </ListItem>
-            <ListItem button onClick={handleDrawerClose}>
+            <ListItem button component={RouterLink} to="/aboutus" onClick={handleDrawerClose}>
               <ListItemText primary="About" />
+            </ListItem>
+			<ListItem button component={RouterLink} to="/aboutus" onClick={handleDrawerClose}>
+              <ListItemText primary="Profile" />
             </ListItem>
             <ListItem button onClick={handleDrawerClose}>
               <ListItemText primary="Contact" />
